@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+}
+.logo {
+  align-self: center;
+  padding-left: 30px;
+}
+.nav-menu {
+  align-self: center;
+  display: flex;
+  gap: 15px;
+  padding-right: 30px;
+}
+.cart,
+.admin {
+  display: flex;
+  gap: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 4px;
+  cursor: pointer;
+}

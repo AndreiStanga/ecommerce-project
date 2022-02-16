@@ -1,0 +1,23 @@
+{
+  "name": "cake-factory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreiStanga/ecommerce-project.git"
+  },
+  "author": "Andrei Stanga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreiStanga/ecommerce-project/issues"
+  },
+  "homepage": "https://github.com/AndreiStanga/ecommerce-project#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0",
+    "bootstrap": "^5.1.3"
+  }
+}
