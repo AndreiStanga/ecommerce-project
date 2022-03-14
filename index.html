@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
@@ -13,16 +17,24 @@
     <title>Cake-Factory</title>
   </head>
   <body>
-    <div class="container">
-      <div class="navbar">
+    <div class="main-container">
+      <div class="main-navbar">
         <div class="logo">
-          <h2>Cake-Factory</h2>
+          <a href="index.html"><h2>Cake-Factory</h2></a>
         </div>
         <div class="nav-menu">
-          <div class="cart">CART<i class="fa-solid fa-cart-shopping"></i></div>
-          <div class="admin">ADMIN<i class="fa-solid fa-user-gear"></i></div>
+          <div class="cart">
+            <a href="cart.html"
+              >CART<i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </div>
+          <div class="admin">
+            <a href="admin.html">ADMIN<i class="fa-solid fa-user-gear"></i></a>
+          </div>
         </div>
       </div>
+      <div class="products-container"></div>
     </div>
+    <script src="./src/app.js"></script>
   </body>
 </html>

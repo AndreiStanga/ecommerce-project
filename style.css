@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-.navbar {
+.main-navbar {
   display: flex;
   justify-content: space-between;
   background-color: lightblue;
@@ -29,4 +29,15 @@ body {
   border-radius: 4px;
   padding: 4px;
   cursor: pointer;
+}
+.products-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.no-of-products {
+  margin: 0 5px;
+  font-size: 20px;
 }
