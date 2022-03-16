@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Admin</title>
@@ -29,6 +33,53 @@
           </div>
         </div>
       </div>
+      <div class="admin-products">
+        <div class="add-product">
+          <form>
+            <div class="form-group">
+              
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Product name"
+              />
+            <div class="form-group">
+              
+              <input
+                type="text"
+                class="form-control"
+                id="price"
+                placeholder="Product price"
+              />
+            <div class="form-group">
+              
+              <input
+                type="text"
+                class="form-control"
+                id="description"
+                placeholder="Product description"
+              />
+          <div> <button class="add-new-product btn btn-primary">
+            Add new product
+          </button></div>
+           
+          </form>
+        </div>
+        <div class="all-products-admin">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody class="admin-products-table"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
+    <script src="./src/admin.js"></script>
   </body>
 </html>
