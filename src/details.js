@@ -14,6 +14,7 @@ window.addEventListener("load", async () => {
             Product Details
         </div>
         <div class="card-body">
+        <img class="details-img"src="/ecommerce-project/images/product${product.id}.jpg" alt="" />
             <h5 class="card-title">${product.name}</h5>
             <p class="card-text">${product.description}</p>
             <p class="card-text">${product.price}</p>

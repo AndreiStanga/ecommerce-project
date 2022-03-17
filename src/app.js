@@ -9,6 +9,7 @@ window.addEventListener("load", async () => {
     .map(
       (product) =>
         `<div class="card" style="width: 18rem;">
+            <img src="/ecommerce-project/images/product${product.id}.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">${product.price}</p>

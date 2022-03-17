@@ -11,17 +11,18 @@ window.addEventListener("load", () => {
     const productCards = cart
       .map(
         (product) =>
-          `<div class="card w-75">
+          `<div class="card w-75 ">
             <div class="card-body">
+            <img class="details-img"src="/ecommerce-project/images/test.jpg" alt="" />
               <h5 class="card-title">${product.name}</h5>
               <p class="card-text">${product.price}</p>
               <p class="card-text">Number of products:
-                <button  data-product-id=${product.id} class="decrement btn btn-dark">-</button>
+                <button  data-product-id=${product.id} class="decrement btn btn-secondary">-</button>
                   <span class="no-of-products">${product.noOfProducts}</span>
-                <button  data-product-id=${product.id} class="increment btn btn-dark">+</button>
+                <button  data-product-id=${product.id} class="increment btn btn-secondary ">+</button>
               </p>
             </div>
-            <button  data-product-id=${product.id} class="delete btn btn-dark">DELETE</button>
+            <button  data-product-id=${product.id} class="delete btn btn-secondary">DELETE</button>
           </div>`
       )
       .join("");

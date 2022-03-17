@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -9,11 +12,20 @@ body {
 .main-navbar {
   display: flex;
   justify-content: space-between;
-  background-color: lightblue;
+  background-color: #fffdde;
+  height: 80px;
+  border-bottom: 2px solid #fc4f4f;
+}
+.main-navbar a {
+  text-decoration: none;
 }
 .logo {
   align-self: center;
   padding-left: 30px;
+}
+.logo h2 {
+  color: #fc4f4f;
+  font-family: "Dancing Script", cursive;
 }
 .nav-menu {
   align-self: center;
@@ -21,20 +33,73 @@ body {
   gap: 15px;
   padding-right: 30px;
 }
+
+.greetings-page {
+  height: 100vh;
+  background-color: #eae3c8;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fc4f4f;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  gap: 30px;
+  margin-right: 100px;
+  margin-top: 100px;
+  font-family: "Varela Round", sans-serif;
+}
+.about-us h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #fc4f4f;
+}
+
+.media {
+  display: flex;
+  gap: 30px;
+}
+
+.media-icon {
+  font-size: 30px;
+}
+
+.home-img-container img {
+  width: 70%;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
 .cart,
 .admin {
   display: flex;
-  gap: 5px;
-  border: 1px solid black;
+  gap: 20px;
   border-radius: 4px;
   padding: 4px;
   cursor: pointer;
+  font-family: "Varela Round", sans-serif;
 }
 .products-container {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  background-color: #eae3c8;
+}
+
+.footer {
+  background-color: #eae3c8;
+  border-top: 2px solid #fc4f4f;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: "Varela Round", sans-serif;
 }
 
 .no-of-products {
@@ -55,4 +120,43 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.card {
+  width: 45%;
+  margin: auto;
+  margin-top: 50px;
+}
+.details-img {
+  height: 250px;
+  border-radius: 20%;
+  margin-left: 160px;
+  margin-bottom: 30px;
+}
+.card-header {
+  background-color: #fffdde;
+  font-family: "Varela Round", sans-serif;
+}
+.cart-container {
+  width: 60%;
+  margin: auto;
+}
+
+.total-price-container {
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+.order {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 120px;
+  padding-bottom: 50px;
+}
+
+.main-container {
+  background-color: #eae3c8;
+  height: 100%;
 }
