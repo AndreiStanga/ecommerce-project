@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
         (product) =>
           `<div class="card w-75 ">
             <div class="card-body">
-            <img class="details-img"src="/ecommerce-project/images/test.jpg" alt="" />
+            <img class="details-img"src="/ecommerce-project/images/product${product.id}.jpg" alt="" />
               <h5 class="card-title">${product.name}</h5>
               <p class="card-text">${product.price}</p>
               <p class="card-text">Number of products:
